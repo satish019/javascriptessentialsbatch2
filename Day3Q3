@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>JavaScript Essential Assignment 1</title>
+    </head>
+
+    <body>
+
+        <h2> Q3. Program to search for element in a array of strings</h2>
+
+        <script>
+            function findInArray(array, val)            
+            {
+                for (var x = 0; x <= array.length; x++){
+                    if( array[x] === val){
+                        return x;
+                    }
+                }
+                return -1;
+            }
+
+            var array = ['Rahil', 'Aneri', 'Kunj', 'Yugma'];
+            alert("The element is at position " + findInArray(array, 'Yugma'));
+
+        </script>
+
+    </body>
+
+</html> 
