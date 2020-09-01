@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>JavaScript Essential Assignment</title>
+    </head>
+    <body>
+        <h2> Q5. Print an array in reverse order</h2>
+
+
+        <script>
+
+            var array = ["PHP","JavaScript","Python","Java","COBOL","C++","CSharp"];
+            var x, y = 0;
+            var char;
+            var reverseArray= [];
+
+            for(x = array.length-1; x >= 0; x--){
+                char = array[x];
+                reverseArray[y] = char;
+                y++
+            }
+            console.log(array);
+            console.log(reverseArray);
+
+        </script>
+
+    </body>
+</html> 
