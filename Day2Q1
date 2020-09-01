@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>JavaScript Essential Assignment 1</title>
+    </head>
+
+    <body>
+
+        <h2> Q1. Program to search for particular character in a string </h2>
+
+        <script>
+            var str = "Hello World of Javascript";
+            var charFind = 'W';
+            var index = str.indexOf(charFind);
+            console.log(charFind," is at ", index);
+
+        </script>
+
+    </body>
+
+</html>
