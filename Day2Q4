@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>JavaScript Essential Assignment</title>
+    </head>
+    <body>
+        <h2> Q4.Program to display only elements containing 'a' in them from a array</h2>
+
+
+        <script>
+
+            var array = ["PHP","JavaScript","Python","Java","COBOL","C++","CSharp"];
+            var x, z = 0, len;
+            var char;
+            var newArray = [];
+
+            for(x = 0; x <= array.length-1; x++){
+                char = array[x];
+
+                if(char.includes("a") == true){
+                    newArray[z] = char;
+                    z++;
+                } 
+            }
+            console.log(array);
+            console.log(newArray);
+
+        </script>
+
+    </body>
+</html> 
