@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to locate the first occurrence of the letter "e".</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "Hello world, welcome to the universe.";
+  var n = str.indexOf("e");
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+</body>
+</html>
