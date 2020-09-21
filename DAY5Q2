@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+    .bdata{
+        height:500px;
+        width: 80%;
+        background-color: black;
+
+        margin-left :10px;
+        margin-top: 50px;
+     padding: 20px;
+     display: inline-block;
+
+
+    }
+    .table
+    {
+      width:100%;
+      margin-top: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: grey;
+
+
+        
+    }
+    .form{
+        margin: 20px;;
+    }
+    th,td{
+        height: 40px;
+        text-align: center;
+        padding: 5px;
+    }
+    h1{
+        font-style: oblique;
+        background-color:slategray;
+        background-image: -webkit-gradient();
+
+        
+    }
+    button{
+        padding: 5px;
+        background-color: silver;
+        width: 20%;
+    }
+    input{
+
+       height: 40px;
+       text-indent: 20px;        
+        
+    
+    }
+    
+</style>
+<body>
+    <div class="bdata">
+        <h1>Bus Management</h1>
+        <br>
+        <form onsubmit="addbus(event)">
+<input type="text"  placeholder="NAME" id="name" />
+<input type="text" placeholder="Source" id="source" />
+<input type="text" placeholder="Destination" id="dest" />
+<input type="number" placeholder="number" id="num" />
+<input type="number" placeholder="Capacity" id="cap" />
+<button type="submit">Add Bus</button>
+
+
+        </form>
+        <div class="form">
+            <input type="text" placeholder="search by source" onkeyup="searchbysource()" id="searchname" />
+            <input type="text" placeholder="search by destination" onkeyup=" searchbydest()" id="searchname" />
+
+        
+    <table border="1" class="table" cellspacing="0">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Source</th>
+                <th>destination</th>
+                <th>number</th>
+                <th>Capacity</th>
+               
+
+            </tr>
+        
+        </thead>
+<tbody class="tdata" id=tdata></tbody>
+    </table>
+        
+</div>
+<script src="script.js"></script>
+</body>
+</html>
