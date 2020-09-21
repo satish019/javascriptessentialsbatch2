@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>office management</title>
+</head>
+<style>
+    .frame{
+        width: 80%;
+        height:600px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 10%;
+        margin-top: 50px;
+        padding:20px;
+        background-color: rgb(54, 31, 8);
+        text-align: center;
+        text-shadow: snow;
+        display: inline-block;
+    }
+    h1{
+        background-color: silver;
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    table{
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        color: darkgoldenrod;
+        background-color: snow;
+    }
+    
+    input{
+        
+        height: 40px;
+        text-indent: 20px;
+        background-color: springgreen;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border: darkmagenta;
+        
+        
+    }
+    button{
+        padding:10px;
+        
+    }
+    th,
+    td {
+height: 40px;
+text-align: center;
+padding:5px;
+    }
+
+    
+
+</style>
+<body>
+    <div class="frame">
+    <h1>Office Management </h1>
+    <form onsubmit="addemp(event)">
+        <input type="text" required placeholder="Name" id="name" />
+        
+
+        <input type="number" required placeholder="Age" id="age" />
+        <input type="text" required placeholder="City" id="city" />
+        <input type="number" requried placeholder="Salary" id="salary" />
+        
+        <button onclick="submit">Add data</button>
+        
+    </form>
+    
+
+<div class="form">
+    <input type="text" placeholder="search here" id="sdata" onkeyup="searchby()" />
+    
+
+
+    
+    <table  border="2">
+    <thead>
+        <tr>
+            <th>Sr no</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>salary</th>
+            <th>action</th>
+                </tr>
+    </thead>
+    <tbody id="tdata" >
+
+    </tbody>
+
+
+
+    </table>
+
+    </div>
+    <script src="question1.js"></script>
+</body>
+</html>
