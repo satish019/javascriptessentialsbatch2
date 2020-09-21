@@ -15,14 +15,7 @@ let products = [
     image: "product2.jpeg",
     description: "Good looking pink shirt",
   },
-  {
-    name: "Printed Shirt",
-    size: "L",
-    color: "brown",
-    price: 1000,
-    image: "product3.jpeg",
-    description: "Good looking brown shirt",
-  },
+ 
   {
     name: "White Ladies Top",
     size: "L",
@@ -40,14 +33,7 @@ let products = [
     description: "Good looking white t-shirt for ladies",
   },
 
-  {
-    name: "Black-White Stripped Top",
-    size: "M",
-    color: "black-white",
-    price: 2200,
-    image: "product6.jpeg",
-    description: "Good looking black-white  t-shirt",
-  },
+  
 ];
 //destructuring
 cart = [];
